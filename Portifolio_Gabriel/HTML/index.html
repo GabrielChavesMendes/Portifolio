@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabriel Chaves Mendes</title>
+        <link rel="stylesheet" type="text/css" href="CSS\principal.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="main-body">
+       
+        <div id="overlay"></div>
+
+        <div id="apresentacao">
+            <div id="cabecalho">
+                <nav class="navbar fixed-top navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <div id="logo"></div>
+                      </a>
+                      <span class="navbar-text text-white me-auto">
+                        <h2 class="m-0">Gabriel Chaves Mendes</h2>
+                      </span>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#"><h5>Home</h5></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#"><h5>Projetos</h5></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#"><h5>Contato</h5></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>                  
+            </div>
+
+            <div id="titulo">
+                <p>Computer<br> Scientist</p>
+            </div>
+        </div>         
+
+        <div id="conteudo" class="container mt-5">
+            <div class="row align-items-center">
+              
+              <!-- Coluna de texto (à esquerda) -->
+              <div class="col-md-7 text-start" id="informacao">
+                <h3>Olá Devs, me chamo Gabriel Chaves Mendes</h3>
+                <p>Sou estudante de Ciência da Computação na universidade PUC-Minas com grande interesse e dedicação ao universo da Tecnologia da Informação. Ao longo do curso, tive a oportunidade de desenvolver 
+                projetos de web development, utilizando principalmente JavaScript, HTML, CSS e linguagem C-Like, além de estar atualmente me aprofundando em Banco de Dados. Estou familiarizado com a plataforma .NET e SQL Server, e possuo experiência tanto em desenvolvimento front-end quanto 
+                back-end, com foco em boas práticas de codificação e otimização de performance. Com uma base sólida em eletrotécnica e uma formação contínua 
+                em TI, busco novas experiências profissionais que me permitam aplicar meus conhecimentos, enfrentar desafios reais e evoluir na área de 
+                tecnologia. Tenho grande interesse em expandir meus conhecimentos em linguagens como Java e NodeJS, além de me especializar em segurança da 
+                informação e computação em nuvem, compreendendo a importância das boas práticas e regulamentações.</p>
+                <br>
+                <p>💻Estou animado para atuar em um ambiente onde possa aprimorar minhas habilidades em desenvolvimento web, análise de dados, inteligência 
+                artificial e computação em nuvem – áreas que são o foco do meu estudo e que despertam meu interesse. Acredito que o crescimento profissional 
+                acontece ao enfrentarmos desafios constantes, e procuro um local onde possa tanto aplicar o que aprendi quanto aprender continuamente no dia 
+                a dia.</p>
+                <br>
+                <p>🚀Se você procura alguém com energia para aprender e vontade de evoluir, estou aqui! Vamos conversar!</p>
+              </div>
+          
+              <!-- Coluna de imagem (à direita) -->
+              <div class="col-md-4 d-flex justify-content-end" id="imagem-gabriel">
+                <div class="img-container text-center">
+                  <div class="border-animada"></div>
+                  <img src="IMG/foto.jpg" class="rounded-circle" style="max-width: 100%;">
+                </div>
+              </div>
+          
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+        <script>
+            const conteudo = document.querySelector('#conteudo');
+            const body = document.getElementById('main-body');
+        
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        body.classList.add('gray-bg');
+                    } else {
+                        body.classList.remove('gray-bg');
+                    }
+                });
+            }, {
+                threshold: 0.3 // Quanto da seção precisa estar visível para mudar
+            });
+        
+            observer.observe(conteudo);
+        </script>
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    background-image: url('escola_atenas.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    transition: background-image 0.3s ease, background-color 0.3s ease; /* Suaviza a transição da imagem e cor de fundo */
+    background-color: transparent;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2f2f2f;
+    opacity: 0;
+    z-index: -1; /* Coloca a camada atrás de outros elementos */
+    transition: opacity 2s ease; /* Suaviza a transição de opacidade ao aparecer/desaparecer */
+}
+
+body.gray-bg #overlay {
+    opacity: 2; /* Faz a camada escura aparecer suavemente */
+} 
+
+#cabecalho {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px 0; 
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 10px;
+    margin: -5px 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(25, 27, 27) !important;
+}
+
+#nome {
+    text-align: left;
+    margin-left: 0; 
+    flex: 1; 
+    color: white;
+    font-family: serif;
+}
+
+#titulo{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 220px;
+}
+
+#apresentacao{
+    margin-bottom: 120px;
+}
+
+#conteudo {
+    color: rgb(236, 225, 225);
+    margin: 0 30px;
+}
+
+#imagem-gabriel{
+    justify-content: flex-end;
+    margin-left: 100px;
+    display: flex; 
+    align-items: center;
+    margin-top: 10px;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+/* borda giratória */
+.border-animada {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid #027500;
+    border-right: 4px solid #000000;
+    animation: girar 2s linear infinite;
+    z-index: 1;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
