@@ -120,3 +120,83 @@ body.gray-bg #overlay {
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 768px) {
+
+    /* Reduz o tamanho do título */
+    #titulo {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    /* Ajusta o conteúdo para ocupar mais espaço vertical */
+    #conteudo {
+        margin: 20px 15px;
+        text-align: justify;
+    }
+
+    /* Imagem centralizada e reduzida */
+    #imagem-gabriel {
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .img-container {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    /* Informações ajustadas com mais espaçamento */
+    #informacao h3 {
+        font-size: 20px;
+    }
+
+    #informacao p {
+        font-size: 16px;
+    }
+
+    /* Navbar colapsada: texto menor e centralizado */
+    .navbar-text h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link h5 {
+        font-size: 16px;
+    }
+
+    /* Padding interno para o cabeçalho */
+    #cabecalho {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajuste adicional para telas bem pequenas */
+    #titulo {
+        margin-top: 30px;
+        font-size: 50px;
+        line-height: 1.2;
+    }
+
+    #informacao h3 {
+        font-size: 18px;
+    }
+
+    #informacao p {
+        font-size: 14px;
+    }
+
+    .navbar-text h2 {
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link h5 {
+        font-size: 14px;
+    }
+
+    .img-container {
+        max-width: 200px;
+    }
+}
