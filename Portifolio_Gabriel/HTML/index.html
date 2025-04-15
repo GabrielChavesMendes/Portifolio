@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     </head>
 
     <body id="main-body">
@@ -32,10 +34,13 @@
                       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                           <li class="nav-item">
-                            <a class="nav-link text-white fw-bold" href="#"><h5>Home</h5></a>
+                            <a class="nav-link text-white fw-bold" href="#titulo"><h5>Home</h5></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link text-white fw-bold" href="#"><h5>Projetos</h5></a>
+                            <a class="nav-link text-white fw-bold" href="#chamado"><h5>Sobre</h5></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#projetos"><h5>Projetos</h5></a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link text-white fw-bold" href="#"><h5>Contato</h5></a>
@@ -49,27 +54,28 @@
             <div id="titulo">
                 <p>Computer<br> Scientist</p>
             </div>
-        </div>         
-
+        </div>   
+        
         <div id="conteudo" class="container mt-5">
             <div class="row align-items-center">
               
               <!-- Coluna de texto (à esquerda) -->
               <div class="col-md-7 text-start" id="informacao">
-                <h3>Olá Devs, me chamo Gabriel Chaves Mendes</h3>
-                <p>Sou estudante de Ciência da Computação na universidade PUC-Minas com grande interesse e dedicação ao universo da Tecnologia da Informação. Ao longo do curso, tive a oportunidade de desenvolver 
+                <div id="chamado">
+                  <h3>Olá Devs, me chamo Gabriel Chaves Mendes,</h3>
+                </div>
+                
+                <p>sou estudante de Ciência da Computação na universidade PUC-Minas com grande interesse e dedicação ao universo da Tecnologia da Informação. Ao longo do curso, tive a oportunidade de desenvolver 
                 projetos de web development, utilizando principalmente JavaScript, HTML, CSS e linguagem C-Like, além de estar atualmente me aprofundando em Banco de Dados. Estou familiarizado com a plataforma .NET e SQL Server, e possuo experiência tanto em desenvolvimento front-end quanto 
                 back-end, com foco em boas práticas de codificação e otimização de performance. Com uma base sólida em eletrotécnica e uma formação contínua 
                 em TI, busco novas experiências profissionais que me permitam aplicar meus conhecimentos, enfrentar desafios reais e evoluir na área de 
                 tecnologia. Tenho grande interesse em expandir meus conhecimentos em linguagens como Java e NodeJS, além de me especializar em segurança da 
                 informação e computação em nuvem, compreendendo a importância das boas práticas e regulamentações.</p>
-                <br>
-                <p>💻Estou animado para atuar em um ambiente onde possa aprimorar minhas habilidades em desenvolvimento web, análise de dados, inteligência 
+                <p>Estou animado para atuar em um ambiente onde possa aprimorar minhas habilidades em desenvolvimento web, análise de dados, inteligência 
                 artificial e computação em nuvem – áreas que são o foco do meu estudo e que despertam meu interesse. Acredito que o crescimento profissional 
                 acontece ao enfrentarmos desafios constantes, e procuro um local onde possa tanto aplicar o que aprendi quanto aprender continuamente no dia 
                 a dia.</p>
-                <br>
-                <p>🚀Se você procura alguém com energia para aprender e vontade de evoluir, estou aqui! Vamos conversar!</p>
+                <p>Se você procura alguém com energia para aprender e vontade de evoluir, estou aqui! Vamos conversar!</p>
               </div>
           
               <!-- Coluna de imagem (à direita) -->
@@ -79,9 +85,96 @@
                   <img src="IMG/foto.jpg" class="rounded-circle" style="max-width: 100%;">
                 </div>
               </div>
-          
             </div>
+
+            <br>
+
+            <div id="projetos">
+              <div>
+                <p id="titulo-projeto">Projetos</p>
+              </div>
+            
+              <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row justify-content-center text-center gx-4 gy-4">
+                      <!-- Item 1 -->
+                      <div class="col-md-4">
+                        <img src="IMG/teste.jpg" class="projeto-img img-fluid" alt="Projeto 1">
+                        <p class="img-titulo">Título Projeto 1</p>
+                      </div>
+              
+                      <!-- Item 2 -->
+                      <div class="col-md-4">
+                        <img src="IMG/teste.jpg" class="projeto-img img-fluid" alt="Projeto 2">
+                        <p class="img-titulo">Título Projeto 2</p>
+                      </div>
+              
+                      <!-- Item 3 -->
+                      <div class="col-md-4">
+                        <img src="IMG/teste.jpg" class="projeto-img img-fluid" alt="Projeto 3">
+                        <p class="img-titulo">Título Projeto 3</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+              </div>
+              
+
+            <div>
+              <p id="titulo-projeto">Contato</p>
+            </div>
+
+            <div id="contato" class="container my-5">
+
+              <div class="row align-items-start">
+                <!-- Coluna da imagem -->
+                <div class="col-md-6 text-center">
+                  <div class="img-computer">
+                    <img src="IMG/computer.png" alt="Computer">
+                  </div>
+                </div>
+              
+                <!-- Coluna das palavras e ícones -->
+                <div class="col-md-6">
+                  <!-- Bloco 1 -->
+                  <div class="row align-items-center mb-5">
+                    <div class="col-6 position-relative word-cloud">
+                      <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Contato</h5>
+                          <p class="card-text mb-2"><strong>Endereço:</strong> Belo Horizonte -MG</p>
+                          <p class="card-text mb-2"><strong>Email:</strong> gabrielchavesmendes@gmail.com</p>
+                          <p class="card-text"><strong>Telefone:</strong> (31) 98911-0304</p>
+                        </div>
+                      </div>                      
+                    </div>
+
+                    <div class="col-6 text-center">
+                      <a href=""><img src="IMG/wpp.png" class="img-fluid img-icon" alt="WhatsApp"></a>
+                      <br><br>
+                      <a href=""><img src="IMG/instragram.png" class="img-fluid img-icon" alt="Instagram"></a>
+                      <br><br>
+                      <a href=""><img src="IMG/linkdin.png" class="img-fluid img-icon" alt="LinkedIn"></a>
+                      <br><br>
+                      <a href=""><img src="IMG/github.png" class="img-fluid img-icon" alt="Github"></a>
+                    </div>          
+                </div>
+              </div>
+            </div>            
+
         </div>
+
+            
+
+        </div>      
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     
