@@ -219,6 +219,7 @@ body.gray-bg #overlay {
     }
 }
 
+/*Informacoes*/
 #chamado{
     font-family: "Playfair Display SC", serif;
     font-weight: 400;
@@ -238,6 +239,7 @@ body.gray-bg #overlay {
     text-decoration-color: rgba(255, 255, 255, 0.2);
     text-decoration-style: normal;
 }
+/*=======================================*/
 
 /* Layout do carrossel */ 
 .projeto-img {
@@ -310,3 +312,34 @@ body.gray-bg #overlay {
     border: 1px solid white;
 }
   
+@media (max-width: 768px) {
+    /* Ajustes para a seção de Contato */
+    #contato {
+        padding: 0 15px; /* Adiciona um espaçamento interno */
+    }
+
+    /* Centraliza a imagem do computador e ajusta tamanho */
+    .img-computer img {
+        width: 250px !important; /* Reduz o tamanho */
+        margin-left: 0 !important; /* Remove o recuo negativo */
+        margin-top: 20px !important;
+    }
+
+    /* Ajusta o card de contato */
+    .card {
+        margin-left: 0 !important; /* Remove o recuo */
+        max-width: 100% !important; /* Ocupa toda a largura */
+        margin-bottom: 20px;
+    }
+
+    /* Alinha os ícones no centro e ajusta espaçamento */
+    .col-md-6.text-center .row {
+        justify-content: center !important;
+    }
+
+    /* Reduz o tamanho dos ícones em mobile */
+    .img-icon {
+        width: 60px !important;
+        margin: 5px !important;
+    }
+}
