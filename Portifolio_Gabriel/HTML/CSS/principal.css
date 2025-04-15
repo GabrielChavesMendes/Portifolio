@@ -12,7 +12,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    transition: background-image 1s ease, background-color 1s ease; /* Suaviza a transição da imagem e cor de fundo */
+    transition: background-image 0.3s ease, background-color 0.3s ease; /* Suaviza a transição da imagem e cor de fundo */
     background-color: transparent;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 body.gray-bg #overlay {
-    opacity: 2; /* Faz a camada escura aparecer suavemente */
+    opacity: 1; /* Faz a camada escura aparecer suavemente */
 } 
 
 #cabecalho {
@@ -126,7 +126,21 @@ body.gray-bg #overlay {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-image: none !important; /* Remove a imagem em telas pequenas */
+        background: #3b3b3b;
+        background: linear-gradient(180deg, rgba(59, 59, 59, 1) 0%, rgba(93, 93, 93, 1) 50%, rgba(135, 135, 135, 1) 100%);
+    }
 
+    #overlay {
+        opacity: 1 !important; /* Garante que o overlay fique totalmente visível */
+        background: #3b3b3b;
+        background: linear-gradient(180deg, rgba(59, 59, 59, 1) 0%, rgba(93, 93, 93, 1) 50%, rgba(135, 135, 135, 1) 100%); /* Cor sólida sem gradiente (opcional) */
+    }
+}
+
+@media (max-width: 768px) {
+ 
     /* Reduz o tamanho do título */
     #titulo {
         font-size: 60px;
